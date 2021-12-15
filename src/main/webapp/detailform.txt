@@ -1,0 +1,12 @@
+<form action='AccountController' method='POST'>
+<table border='1'>
+<tbody><tr><td>Account Name</td><td> <!-- variable  --> </td></tr>
+<tr><td>Account Number</td><td> <!-- variable  --> </td></tr>
+<tr><td>Account Balance</td><td> <!-- variable  --> </td></tr>
+<tr><td>Account Type</td><td> <!-- variable  --> </td></tr>
+<tr><td>Amount</td><td><input name='amount' value='0' type='text'></td></tr>
+<tr><td><input name='submit' value='Debit' type='submit'></td><td><input name='submit' value='Credit' type='submit'></td></tr>
+<tr><td><input name='submit' value='Previous' type='submit'></td><td><input name='submit' value='Next' type='submit'></td></tr>
+<tr><td><input name='submit' value='Save' type='submit'></td><td><input name='submit' value='List' type='submit'></td></tr>
+</tbody></table>
+</form>
