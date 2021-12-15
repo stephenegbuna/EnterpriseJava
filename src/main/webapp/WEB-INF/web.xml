@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>EnterpriseJava</display-name>
+
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>servlet.HelloServlet</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>HelloServlet2</servlet-name>
+		<servlet-class>servlet.HelloServlet2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SampleServlet</servlet-name>
+		<servlet-class>servlet.SampleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FormServlet</servlet-name>
+		<servlet-class>servlet.FormServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>HelloServlet2</servlet-name>
+		<url-pattern>/hello2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SampleServlet</servlet-name>
+		<url-pattern>/sample</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FormServlet</servlet-name>
+		<url-pattern>/form_servlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>hello.html</welcome-file>
+
+	</welcome-file-list>
+</web-app>
