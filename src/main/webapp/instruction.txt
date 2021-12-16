@@ -1,0 +1,3 @@
+- sql: queries for tables and user is within the webapp folder
+- datasource config: wildfly requires configuration for jdbc driver and datasource.
+- jdbc: mysql driver exists in the webapp/web-inf/lib folder
