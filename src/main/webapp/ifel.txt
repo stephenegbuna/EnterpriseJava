@@ -1,0 +1,40 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+ 
+<% 
+  boolean a = true; 
+
+  boolean b = true; 
+  pageContext.setAttribute("b",new Boolean(b));
+
+  boolean c = false; 
+  pageContext.setAttribute("c",new Boolean(c));
+
+  boolean param = true;
+  pageContext.setAttribute("param",new Boolean(param));
+%>
+ 
+<%-- 
+  this is false because 'a' is not findable by
+  pageContext.findAttribute(varname)
+--%>
+<c:if test="${a}">
+a is TRUE
+</c:if>
+
+<c:if test="${b}">
+b is TRUE
+</c:if>
+
+<%-- this is false because 'c' was set to false --%>
+<c:if test="${c}">
+c is TRUE
+</c:if>
+
+
+<%-- 
+  This is false because 'param' is an implicit variable
+  which is used instead of pageContext.findAttribute("param")
+--%>
+<c:if test="${param}">
+param is TRUE
+</c:if>
