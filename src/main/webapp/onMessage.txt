@@ -1,0 +1,17 @@
+	public void onMessage(Message inMessage) {
+		TextMessage msg = null;
+		try {
+			if (inMessage instanceof TextMessage) {
+				msg = (TextMessage) inMessage;
+				System.out.println("Your message is : " + msg.getText());
+			} else {
+				System.out.println("Invalid message : " +
+					inMessage.getClass().getName());
+			}
+		} catch (JMSException e) {
+			System.err.println("BasicMDB.onMessage: " +"JMSException: " + e);
+		mdc.setRollbackOnly();
+		} catch (Throwable te) {
+			System.err.println("BasicMDB.onMessage: " + "Exception: " + te);
+		}
+	}
